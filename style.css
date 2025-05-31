@@ -1,0 +1,249 @@
+/* Custom styles for AWE Electronics Online Store */
+
+/* General styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+/* Product card styles */
+.product-card {
+    height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.product-img-container {
+    height: 180px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fa;
+}
+
+.product-img-container img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.product-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #dc3545;
+}
+
+.stock-status {
+    font-size: 0.85rem;
+}
+
+.in-stock {
+    color: #198754;
+}
+
+.low-stock {
+    color: #fd7e14;
+}
+
+.out-of-stock {
+    color: #dc3545;
+}
+
+/* Cart styles */
+.cart-item {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.cart-product-img {
+    max-width: 100px;
+    max-height: 100px;
+    object-fit: contain;
+}
+
+.cart-summary {
+    position: sticky;
+    top: 20px;
+}
+
+/* Order styles */
+.order-status {
+    font-weight: bold;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.status-pending {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.status-processing {
+    background-color: #cce5ff;
+    color: #004085;
+}
+
+.status-shipped {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.status-delivered {
+    background-color: #d1e7dd;
+    color: #0f5132;
+}
+
+.status-canceled {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.status-refunded {
+    background-color: #e2e3e5;
+    color: #383d41;
+}
+
+/* Payment status */
+.payment-status {
+    font-weight: bold;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.payment-pending {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.payment-completed {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.payment-failed {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.payment-refunded {
+    background-color: #e2e3e5;
+    color: #383d41;
+}
+
+/* Auth pages */
+.auth-container {
+    max-width: 500px;
+    margin: 2rem auto;
+}
+
+.auth-tabs {
+    margin-bottom: 1.5rem;
+}
+
+/* Account pages */
+.account-sidebar {
+    position: sticky;
+    top: 20px;
+}
+
+.account-menu .list-group-item.active {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+/* Admin pages */
+.admin-dashboard-card {
+    transition: transform 0.3s ease;
+}
+
+.admin-dashboard-card:hover {
+    transform: translateY(-5px);
+}
+
+.admin-dashboard-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Utility classes */
+.bg-light-gray {
+    background-color: #f8f9fa;
+}
+
+.product-detail-img {
+    max-height: 400px;
+    object-fit: contain;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .product-img-container {
+        height: 150px;
+    }
+    
+    .cart-product-img {
+        max-width: 80px;
+        max-height: 80px;
+    }
+    
+    .cart-summary {
+        position: static;
+        margin-top: 1.5rem;
+    }
+    
+    .account-sidebar {
+        position: static;
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* Animation for loading states */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s;
+}
+
+/* Custom pagination */
+.pagination .page-item.active .page-link {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+.pagination .page-link {
+    color: #0d6efd;
+}
+
+/* Product categories sidebar */
+.category-sidebar {
+    position: sticky;
+    top: 20px;
+}
+
+.category-link {
+    text-decoration: none;
+    color: #495057;
+    padding: 0.5rem;
+    border-radius: 4px;
+    display: block;
+    transition: background-color 0.2s;
+}
+
+.category-link:hover,
+.category-link.active {
+    background-color: #e9ecef;
+}
